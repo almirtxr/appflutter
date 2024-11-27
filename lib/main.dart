@@ -174,7 +174,7 @@ class _EscolheFormState extends State<EscolheForm> {
                 },
                 child: ListTile(
                   title: const Text('Morosidade de Processo'),
-                  leading: Radio.adaptive(
+                  leading: Radio(
                     value: EscolheOpcao.morosidade,
                     groupValue: _opcao,
                     onChanged: (EscolheOpcao? value) {
@@ -196,7 +196,7 @@ class _EscolheFormState extends State<EscolheForm> {
                 },
                 child: ListTile(
                   title: const Text('Prerrogativas'),
-                  leading: Radio.adaptive(
+                  leading: Radio(
                     value: EscolheOpcao.prerrogativas,
                     groupValue: _opcao,
                     onChanged: (EscolheOpcao? value) {
@@ -230,7 +230,7 @@ class _EscolheFormState extends State<EscolheForm> {
                 },
                 child: ListTile(
                   title: const Text('Solicitações Diversas'),
-                  leading: Radio.adaptive(
+                  leading: Radio(
                     value: EscolheOpcao.solicitacoes,
                     groupValue: _opcao,
                     onChanged: (EscolheOpcao? value) {

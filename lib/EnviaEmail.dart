@@ -7,13 +7,13 @@ import 'package:mime/mime.dart';
 void enviarEmail(String assunto, String conteudo, String solicitacao,
     String conteudoHTML, List<PlatformFile> arquivosSelecionados) async {
   final smtpServer =
-      SmtpServer('example', username: 'example', password: 'example');
+    SmtpServer('smtplw.com.br', username: 'oabms', password: 'XqkJJyKS4692');
 
   final message = Message()
     ..from = const Address(
         'tecnologia_informacao@oabms.org.br', 'Aplicativo Corregedoria OAB/MS')
-    // ..recipients.add('almirgabriel@oabms.org.br')
-    ..recipients.add('corregedoria@oabms.org.br')
+    ..recipients.add('almirgabriel@oabms.org.br')
+    // ..recipients.add('corregedoria@oabms.org.br')
     ..subject = assunto
     ..text = conteudo
     ..html = conteudoHTML;
